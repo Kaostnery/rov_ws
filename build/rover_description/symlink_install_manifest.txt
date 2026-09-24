@@ -1,0 +1,15 @@
+/home/loxirayax/rov_ws/install/rover_description/share/ament_index/resource_index/package_run_dependencies/rover_description
+/home/loxirayax/rov_ws/install/rover_description/share/ament_index/resource_index/parent_prefix_path/rover_description
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/environment/ament_prefix_path.sh
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/environment/ament_prefix_path.dsv
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/environment/path.sh
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/environment/path.dsv
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/local_setup.bash
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/local_setup.sh
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/local_setup.zsh
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/local_setup.dsv
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/package.dsv
+/home/loxirayax/rov_ws/install/rover_description/share/ament_index/resource_index/packages/rover_description
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/cmake/rover_descriptionConfig.cmake
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/cmake/rover_descriptionConfig-version.cmake
+/home/loxirayax/rov_ws/install/rover_description/share/rover_description/package.xml
