@@ -1,0 +1,127 @@
+# Resilient Autonomous Inspection Rover
+
+## 1. Project Overview
+
+The objective is to design an autonomous four-wheel inspection rover
+capable of exploring and mapping an unknown tunnel-like environment,
+detecting inspection targets, handling degraded terrain or sensor
+conditions, and returning to its starting point without teleoperation.
+
+The project combines control engineering, mobile robotics, sensor
+fusion, perception, autonomous navigation and experimental evaluation.
+
+## 2. Final Mission
+
+After receiving a mission start command, the rover must:
+
+1. Perform a sensor and system self-check.
+2. Explore an initially unknown environment.
+3. Build a map and estimate its position.
+4. Navigate without colliding with obstacles.
+5. Detect and localize inspection targets.
+6. Handle wheel slip or temporary sensor degradation.
+7. Return autonomously to its starting point.
+8. Generate a mission report.
+
+## 3. Rover Architecture
+
+- Four-wheel skid-steer drivetrain
+- Independent wheel velocity control
+- Wheel encoders
+- IMU
+- 2D LiDAR
+- RGB camera
+- Stabilized sensor platform in the advanced version
+- ROS 2 Jazzy
+- Gazebo Harmonic
+- RViz
+
+## 4. Development Versions
+
+### Version 1 — Rigid Chassis Baseline
+
+Purpose:
+Establish a simple and reproducible reference vehicle.
+
+Features:
+- Rigid chassis
+- Four driven wheels
+- Wheel velocity control
+- Heading and trajectory control
+- Odometry
+- Manual and autonomous commands
+
+### Version 2 — Passive Suspension
+
+Purpose:
+Evaluate the influence of suspension on mobility and localization.
+
+Features:
+- Independent passive suspension
+- Spring and damper modelling
+- Uneven terrain scenarios
+- Wheel contact and chassis motion measurements
+- Comparison against the rigid baseline
+
+### Version 3 — Active Stabilization
+
+Purpose:
+Improve perception stability and navigation on uneven terrain.
+
+Features:
+- Actively stabilized camera/LiDAR platform
+- IMU-based attitude estimation
+- Closed-loop stabilization
+- Comparison against rigid and passive configurations
+
+## 5. Research Questions
+
+1. How does passive suspension affect wheel contact and odometry
+   accuracy on uneven terrain?
+
+2. How do chassis vibrations influence LiDAR-based localization and
+   mapping?
+
+3. Can active sensor stabilization improve perception and navigation
+   reliability?
+
+4. How effectively can sensor fusion compensate for wheel slip and
+   temporary sensor degradation?
+
+## 6. Evaluation Metrics
+
+- Wheel velocity tracking error
+- Heading and trajectory tracking error
+- Settling time and overshoot
+- Chassis roll and pitch
+- Vertical acceleration
+- Wheel contact loss duration
+- Odometry drift
+- Localization error
+- Map consistency
+- Collision count
+- Mission success rate
+- Return-to-base accuracy
+- Mission duration
+
+## 7. Initial Scope
+
+The first implementation will be entirely simulated.
+
+A physical prototype may be developed after the simulation,
+control architecture and experimental protocol are validated.
+
+## 8. Out of Scope for Version 1
+
+- Complex computer vision
+- SLAM
+- Active suspension
+- Physical hardware
+- Machine learning
+- Multi-robot coordination
+
+## 9. Definition of Success
+
+The project is considered successful when the rover can complete an
+autonomous inspection mission and when the three mechanical/control
+configurations can be compared through reproducible experiments.
